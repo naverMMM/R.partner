@@ -1,24 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="420" height="180" viewBox="0 0 420 180">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="R.Partner logo">
   <defs>
-    <linearGradient id="gold" x1="0%" x2="100%" y1="0%" y2="100%">
-      <stop offset="0%" stop-color="#caa86a"/>
+    <linearGradient id="goldGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#d3ad67"/>
       <stop offset="100%" stop-color="#b78a45"/>
     </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="8" stdDeviation="18" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
   </defs>
-  <rect width="420" height="180" fill="#ffffff"/>
-  <!-- wreath arc -->
-  <path d="M80,30 C130,10 220,10 290,48" stroke="url(#gold)" stroke-width="6" fill="none" stroke-linecap="round"/>
-  <!-- laurel leaves -->
-  <g transform="translate(70,28)" fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round">
-    <path d="M10 10 q10 -8 18 -4"/>
-    <path d="M18 16 q10 -8 18 -4"/>
-    <path d="M26 22 q10 -8 18 -4"/>
+
+  <!-- background (transparent) -->
+  <rect width="1200" height="1200" fill="none"/>
+
+  <!-- wreath arc (right) -->
+  <path d="M980 200 C920 160 760 120 600 160 C440 200 300 320 220 460" fill="none" stroke="url(#goldGrad)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- laurel (left) group -->
+  <g transform="translate(200,220) scale(1.15)" stroke="url(#goldGrad)" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M50 520 C120 450 150 380 140 330" opacity="0"/>
+    <!-- leaf stems -->
+    <path d="M40 520 C90 460 120 400 140 330"/>
+    <g stroke-width="10" transform="translate(10,-40)">
+      <path d="M58 430 C78 400 98 380 120 370 C138 362 152 360 170 370"/>
+      <path d="M48 360 C68 330 96 310 130 300"/>
+      <path d="M38 300 C58 270 86 250 126 240"/>
+    </g>
   </g>
-  <!-- RP monogram -->
-  <text x="120" y="120" font-family="Times New Roman, serif" font-size="72" fill="#0f2038">R</text>
-  <text x="170" y="120" font-family="Times New Roman, serif" font-size="72" fill="#0f2038">P</text>
-  <!-- company name -->
-  <text x="120" y="155" font-family="Arial, Noto Sans KR, sans-serif" font-size="20" fill="#0f2038">R.Partner</text>
-  <text x="120" y="175" font-family="Arial, Noto Sans KR, sans-serif" font-size="12" fill="#b78a45">WEDDING RECEPTION MANAGEMENT</text>
+
+  <!-- RP monogram (center) -->
+  <g transform="translate(360,240) scale(2.2)" fill="#0f2038" filter="url(#softShadow)">
+    <!-- Letter R -->
+    <path d="M80 420 L80 120 L220 120 C280 120 320 160 320 220 C320 260 300 296 260 312 C300 328 330 364 330 412 C330 492 270 540 210 540 L80 540 z M190 200 L140 200 L140 260 L190 260 C220 260 240 240 240 210 C240 190 220 200 190 200 z"/>
+    <!-- Letter P (overlapping) -->
+    <path d="M360 120 L360 540 L460 540 L460 420 L420 420 C380 420 360 390 360 340 L360 120 z M380 200 L420 200 C450 200 470 220 470 250 C470 280 450 300 420 300 L380 300 z"/>
+  </g>
+
+  <!-- small gold dot accent -->
+  <circle cx="900" cy="520" r="22" fill="url(#goldGrad)"/>
+
+  <!-- Company name -->
+  <g transform="translate(300,820)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="92" fill="#0f2038" font-weight="700">R.Partner</text>
+  </g>
+
+  <!-- Subtitle -->
+  <g transform="translate(300,920)" fill="#b78a45">
+    <text x="0" y="0" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" letter-spacing="6">WEDDING RECEPTION</text>
+    <text x="0" y="52" font-family="Arial, 'Noto Sans KR', sans-serif" font-size="36" letter-spacing="6">MANAGEMENT</text>
+  </g>
 </svg>
