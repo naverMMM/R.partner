@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260">
+  <rect width="400" height="260" fill="#18304f" rx="16"/>
+  <g fill="#dcc08d" font-family="Times New Roman, serif">
+    <text x="28" y="90" font-size="22">RECEPTION</text>
+    <text x="28" y="130" font-size="36">KIT</text>
+  </g>
+</svg>
